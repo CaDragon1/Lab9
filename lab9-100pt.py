@@ -13,3 +13,30 @@
 # - A temperature of over 105F
 # - A temperature of over 102F and they have been sick in the last 24 hours
 # - A temperature over 100, OR they've been sick in the last 24 hours, AND they've recently travelled to West Africa.
+
+
+# Asking for temperature
+
+print 'Hello, welcome to Silent Hill General Hospital. May I please have your temperature?'
+temp = int(raw_input())
+if temp > 105:
+    print 'You can go down to room 103, the doctor will be with you shortly.'
+else:
+    if temp > 102:
+        print 'Have you been sick in the last 24 hours?'
+        sickHr = raw_input()
+        if sickHr == 'yes' or sickHr == 'y' or sickHr == 'Yes':
+            print 'Room 78 is down the hall to your left.'
+        else:
+            print 'Come back if you start feeling worse.'
+    else:
+        if temp > 100:
+            print 'Have you been sick in the last 24 hours?'
+            sickHr = raw_input()
+            if sickHr == 'yes' or sickHr == 'y' or sickHr == 'Yes':
+            
+        
+    print 'Have you been sick in the last 24 hours?'
+    sickHr = raw_input()
+    print 'Have you recently been to West Africa?'
+    wA = raw_input()
