@@ -16,6 +16,10 @@
 
 print 'What temperature (in celcius) would you like to convert to fahrenheit?'
 celTemp = int(raw_input())
+print 'Calculating...'
 
 fahrTemp = celTemp * 9
-fahrTemp = fahrTemp
+fahrTemp = fahrTemp / 5
+fahrTemp = fahrTemp + 32
+
+print 'The fahrenheit conversion of ' + str(celTemp) + ' degrees celcius is ' + str(fahrTemp) + ' degrees fahrenheit.'
