@@ -34,9 +34,14 @@ else:
             print 'Have you been sick in the last 24 hours?'
             sickHr = raw_input()
             if sickHr == 'yes' or sickHr == 'y' or sickHr == 'Yes':
-            
-        
-    print 'Have you been sick in the last 24 hours?'
-    sickHr = raw_input()
-    print 'Have you recently been to West Africa?'
-    wA = raw_input()
+                print 'Have you recently been to West Africa?'
+                wA = raw_input()
+                if wA == 'yes' or sickHr == 'y' or sickHr == 'Yes':
+                    print 'Go into the quarantine room, the ebola specialists will join you soon.'
+            elif sickHr == 'no' or sickHr == 'No' or sickHr == 'n':
+                print 'Have you recently been to West Africa?'
+                wA = raw_input()
+                if wA == 'yes' or sickHr == 'y' or sickHr == 'Yes':
+                    print 'Go into the quarantine room, the ebola specialists will join you soon.'
+elif temp
+    print 'Come back if you start feeling worse.'
