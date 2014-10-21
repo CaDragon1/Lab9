@@ -19,8 +19,10 @@
 
 print 'Hello, welcome to Silent Hill General Hospital. May I please have your temperature?'
 temp = int(raw_input())
-if temp > 105:
-    print 'You can go down to room 103, the doctor will be with you shortly.'
+if temp > 100:
+    if temp > 102:
+        print 'You can go down to room 103, the doctor will be with you shortly.'
+    
 else:
     if temp > 102:
         print 'Have you been sick in the last 24 hours?'
