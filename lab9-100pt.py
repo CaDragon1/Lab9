@@ -30,7 +30,11 @@ if temp > 100:
                 print 'Room 78 is down the hall to your left.'
             else:
                 print 'Come back if you start feeling worse.'
-    
+    if temp <= 102:
+        print 'Have you recently been to West Africa?'
+        wA = raw_input()
+        if wA == 'yes' or sickHr == 'y' or sickHr == 'Yes':
+            print 'Go into the quarantine room, the ebola specialists will join you soon.'
             
     
 else:
