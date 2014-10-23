@@ -35,7 +35,19 @@ if temp > 100:
         wA = raw_input()
         if wA == 'yes' or sickHr == 'y' or sickHr == 'Yes':
             print 'Go into the quarantine room, the ebola specialists will join you soon.'
-            
+if temp <= 100:
+    print 'Have you been sick in the last 24 hours?'
+    sickHr = raw_input()
+    if sickHr == 'yes' or sickHr == 'y' or sickHr == 'Yes':
+        print 'Have you recently been to West Africa?'
+        wA = raw_input()
+        if wA == 'yes' or sickHr == 'y' or sickHr == 'Yes':
+            print 'Go into the quarantine room, the ebola specialists will join you soon.'
+        else:
+            print 'Come back if you start feeling worse.'
+    
+    
+
     
 else:
     if temp > 102:
